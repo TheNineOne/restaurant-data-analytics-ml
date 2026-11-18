@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches & temporary files
+.matplotlib_cache/
+.matplotlib/
+*.log
+
+# Environments
+venv/
+.venv/
+env/
+.env
+
+# Streamlit local state
+.streamlit/secrets.toml
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
