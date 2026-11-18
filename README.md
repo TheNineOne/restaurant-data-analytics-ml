@@ -1,9 +1,12 @@
 # Restaurant Data Analytics & Rating Prediction System
 
+[![Streamlit Cloud](https://img.shields.io/badge/Streamlit%20Cloud-Live%20Demo-brightgreen.svg?logo=streamlit)](https://restaurant-data-analytics-ml.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/Streamlit-1.42.0-FF4B4B.svg)](https://streamlit.io/)
 [![Machine Learning](https://img.shields.io/badge/scikit--learn-1.6.1-F7931E.svg)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+> 🚀 **Live Interactive Dashboard:** [restaurant-data-analytics-ml.streamlit.app](https://restaurant-data-analytics-ml.streamlit.app/)
 
 An end-to-end Data Science and Machine Learning project completed for the **Cognifyz Technologies Data Science Internship Program**. This repository implements a full analytical lifecycle: exploratory data analysis, geospatial intelligence, statistical hypothesis testing, feature engineering, multi-model regression benchmarking, and an interactive 9-module Streamlit analytics dashboard.
 
