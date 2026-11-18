@@ -236,7 +236,7 @@ The Streamlit dashboard (`app.py`) is structured into 9 dedicated modules:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/restaurant-data-analytics-ml.git
+git clone https://github.com/TheNineOne/restaurant-data-analytics-ml.git
 cd restaurant-data-analytics-ml
 ```
 
