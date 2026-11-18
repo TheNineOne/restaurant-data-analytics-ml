@@ -128,11 +128,14 @@ def load_data():
     """Load and preprocess dataset for rapid UI interaction."""
     base_dir = os.path.dirname(os.path.abspath(__file__))
     candidates = [
-        r"c:\Users\Shrey Mishra\Documents\Dataset .csv",
         os.path.join(base_dir, "data", "processed", "engineered_restaurant_data.csv"),
+        os.path.join(base_dir, "data", "processed", "cleaned_restaurant_data.csv"),
         os.path.join(base_dir, "data", "raw", "Dataset .csv"),
-        os.path.join(os.getcwd(), "restaurant-data-science", "data", "processed", "engineered_restaurant_data.csv"),
-        os.path.join(os.getcwd(), "Dataset .csv")
+        os.path.join(base_dir, "Dataset .csv"),
+        os.path.join(os.getcwd(), "data", "processed", "engineered_restaurant_data.csv"),
+        os.path.join(os.getcwd(), "data", "raw", "Dataset .csv"),
+        os.path.join(os.getcwd(), "Dataset .csv"),
+        r"c:\Users\Shrey Mishra\Documents\Dataset .csv"
     ]
     data_file = None
     for p in candidates:
@@ -144,7 +147,11 @@ def load_data():
         st.error("Error: Could not locate restaurant dataset file.")
         st.stop()
 
-    df = pd.read_csv(data_file, encoding="utf-8")
+    try:
+        df = pd.read_csv(data_file, encoding="utf-8")
+    except UnicodeDecodeError:
+        df = pd.read_csv(data_file, encoding="latin-1")
+        
     df["Cuisines"] = df["Cuisines"].fillna("Unknown")
     
     if "Country_Name" not in df.columns:
