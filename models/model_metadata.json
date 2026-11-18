@@ -1,0 +1,61 @@
+{
+    "model_name": "Random Forest",
+    "feature_names": [
+        "Country Code",
+        "Longitude",
+        "Latitude",
+        "Average Cost for two",
+        "Price range",
+        "Votes",
+        "Name_Length",
+        "Address_Length",
+        "Has_Table_booking_encoded",
+        "Has_Online_delivery_encoded",
+        "Num_Cuisines"
+    ],
+    "train_samples": 7640,
+    "test_samples": 1911,
+    "evaluation_metrics": {
+        "test_mae": 0.1992502521227924,
+        "test_mse": 0.09160838762879682,
+        "test_rmse": 0.30266877544404347,
+        "test_r2": 0.9597521963935739,
+        "cv_r2_5fold": 0.9565724717991382
+    },
+    "all_models_comparison": {
+        "Linear Regression": {
+            "mae": 1.0535049315835472,
+            "mse": 1.5862934955174215,
+            "rmse": 1.2594814391317648,
+            "r2": 0.3030678661386367,
+            "cv_r2": 0.3120990760074645
+        },
+        "Decision Tree": {
+            "mae": 0.21536396629434382,
+            "mse": 0.1061112367556858,
+            "rmse": 0.3257471976175479,
+            "r2": 0.9533804236934815,
+            "cv_r2": 0.9502530661075237
+        },
+        "Random Forest": {
+            "mae": 0.1992502521227924,
+            "mse": 0.09160838762879682,
+            "rmse": 0.30266877544404347,
+            "r2": 0.9597521963935739,
+            "cv_r2": 0.9565724717991382
+        }
+    },
+    "feature_importances": {
+        "Votes": 0.9656871375194216,
+        "Longitude": 0.011262257841282125,
+        "Latitude": 0.007887313758934339,
+        "Average Cost for two": 0.004025989635328202,
+        "Country Code": 0.003528483572686814,
+        "Address_Length": 0.0031535101581473043,
+        "Name_Length": 0.0023735501840963626,
+        "Num_Cuisines": 0.0009280180467174855,
+        "Price range": 0.00045282413451027905,
+        "Has_Online_delivery_encoded": 0.0004379739768358117,
+        "Has_Table_booking_encoded": 0.0002629411720396426
+    }
+}
